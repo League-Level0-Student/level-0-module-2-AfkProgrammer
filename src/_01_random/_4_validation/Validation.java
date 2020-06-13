@@ -12,14 +12,28 @@ public class Validation {
 
 		Random randomMaker = new Random();
 
-		int randomNumber = randomMaker.nextInt(5);
+		for (int randomNumber = 0; randomNumber < 11; randomNumber++) {
 
-		// 1. Use each value of randomNumber to give the user a random compliment.
-		if (randomNumber == 0) {
-			System.out.println("You are cool.");
-// 2. Repeat all the code above 10 times
+			int random = randomMaker.nextInt(6);
 
-// 3. Find someone to test out your program. They will like it :)
+			// 1. Use each value of randomNumber to give the user a random compliment.
+			if (random == 0) {
+				System.out.println("You are cool.");
+			} else if (random == 1) {
+				System.out.println("You are very smart.");
+			} else if (random == 2) {
+				System.out.println("You are a good public speaker");
+			} else if (random == 3) {
+				System.out.println("You make good food.");
+			} else if (random == 4) {
+				System.out.println("You are very joyfull");
+			} else if (random == 5) {
+				System.out.println("You are funny");
+			}
+
+			// 2. Repeat all the code above 10 times
+
+			// 3. Find someone to test out your program. They will like it :)
 		}
 	}
 }
